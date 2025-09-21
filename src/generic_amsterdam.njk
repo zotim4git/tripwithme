@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	
+{% include "header.njk" %}	
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Amsterdam</h1>
+							<div class="map-wrapper">
+							  <img src="/images/amsterdam_map.png" alt="Seoul Map" class="responsive-map" />
+							</div>
+
+							
+							<!--  FILTER MENU -->
+							<div class="category-menu-wrapper">
+							  <button class="category-toggle">Select Catrgory <i class="fas fa-bars"></i></button>
+							  <nav class="category-nav">
+								<a href="#" class="filter-btn active" data-filter="all">All</a>
+								<a href="#" class="filter-btn" data-filter="spot">Places to Pause</a>
+								<a href="#" class="filter-btn" data-filter="area">Neighborhoods to Wander</a>
+								
+							  </nav>
+							</div>
+
+							<!-- CARD SECTION -->
+							<section class="cd-gallery">
+							  <ul>
+								<li class="mix area">
+									<div class="cd-title">Jordaan District</div>
+                                    <div class="cd-location">Amsterdam</div>
+									<img src="/image_city/jordan_3.webp" alt="Amorepacific Headquarters">
+								  <p class="desc">Winding canals, local art, and quiet charm — Jordaan is Amsterdam at its most poetic.</p>
+								  <div class="button-container">
+									<a href="/generic_jordan" class="btn-fullstory">Full Story</a>
+								  </div>
+								</li>
+
+								<li class="mix spot">
+									<div class="cd-title">De Hallen</div>
+                                    <div class="cd-location">Hannie Dankbaarpassage 47, 1053 RT </div>
+									<img src="/image_city/de_hallen1.webp" alt="Simmons Grocery Store">
+								  <p class="desc">Old tram depot turned creative hub. Food, films & local vibes — all under one roof.</p>
+								  <div class="button-container">
+									<a href="/generic_de_hallen" class="btn-fullstory">Full Story</a>
+								  </div>
+								</li>
+
+								
+							  </ul>
+								
+							</section>
+							<div class="menu-line"></div>
+							<div class="city-footer">
+							  <p class="inner">
+								Amsterdam is a city of canals, contrasts, and quiet charm.<br />
+								From cozy alleyways to cutting-edge design spaces, it invites you to slow down and look closer.<br />
+							    Every corner feels like a curated moment — honest, quirky, and beautifully alive.
+							  </p>
+							  <a href="/#explore-city" class="btn-outline">Explore Other Cities
+</a>
+							</div>
+							
+						</div>
+					</div>
+
+{% include "footer.njk" %}
+	</body>
+</html>
