@@ -1,0 +1,30 @@
+---
+title: "{{ title }}"
+---
+
+{% include "header.njk" %}
+
+<!-- Main -->
+<div id="main">
+  <div class="inner">
+    <h1>{{ title }}</h1>
+
+    {% if main_image %}
+      <span class="image main">
+        <img src="{{ main_image }}" alt="{{ title }}" />
+      </span>
+    {% endif %}
+
+    <p>{{ description }}</p>
+
+    {{ content | safe }}
+
+    <div class="button-container">
+      <a href="/generic_seoul/" class="btn-fullstory">Explore more spots in Seoul</a>
+    </div>
+  </div>
+</div>
+
+{% include "footer.njk" %}
+
+

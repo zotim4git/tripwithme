@@ -1,0 +1,32 @@
+---
+layout: layout.njk
+title: {{ title }}
+---
+
+<section id="main" class="spot-page">
+  <div class="inner">
+
+    <h1>{{ title }}</h1>
+
+    {% if main_image %}
+    <div class="spot-image">
+      <img src="{{ main_image | url }}" alt="{{ title }}">
+    </div>
+    {% endif %}
+
+    {% if description %}
+    <p class="spot-desc">{{ description }}</p>
+    {% endif %}
+
+    <div class="spot-body">
+      {{ body | safe }}
+    </div>
+
+    <div class="button-container">
+      <a href="/generic_{{ city }}/" class="btn-fullstory">
+        Explore more spots in {{ city | capitalize }}
+      </a>
+    </div>
+
+  </div>
+</section>

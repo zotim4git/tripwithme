@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+collections:
+  - name: "seoul"
+    label: "Seoul"
+    folder: "src/seoul_spot"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "City", name: "city", widget: "hidden", default: "seoul" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Main Image", name: "main_image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+
+
