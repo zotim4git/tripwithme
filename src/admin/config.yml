@@ -1,9 +1,15 @@
 backend:
   name: git-gateway
   branch: main
+  identity_url: https://magical-druid-edae07.netlify.app/.netlify/identity
+  gateway_url: https://magical-druid-edae07.netlify.app/.netlify/git
+  site_url: https://magical-druid-edae07.netlify.app
 
-media_folder: "src/assets/images/uploads"
-public_folder: "/assets/images/uploads"
+# admin 경로
+local_backend: true
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
 
 collections:
   - name: "seoul"
