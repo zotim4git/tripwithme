@@ -3,6 +3,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/image_city");
+  eleventyConfig.addPassthroughCopy("src/admin"); // ✅ 이거 추가!
 
   return {
     dir: {
