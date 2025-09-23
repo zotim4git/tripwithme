@@ -1,0 +1,6 @@
+{
+  "layout": "city-spot.njk",
+  "eleventyComputed": {
+    "permalink": "generic_seoul/{{ page.fileSlug }}/"
+  }
+}
