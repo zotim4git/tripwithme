@@ -5,6 +5,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/image_city");
   eleventyConfig.addPassthroughCopy("src/admin"); // ✅ 이거 추가!
 
+  // ✅ 업로드 폴더 추가
+  eleventyConfig.addPassthroughCopy("src/uploads");
+    
   return {
     dir: {
       input: "src",
