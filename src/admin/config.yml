@@ -3,7 +3,8 @@ backend:
   branch: main
   identity_url: https://magical-druid-edae07.netlify.app/.netlify/identity
   gateway_url: https://magical-druid-edae07.netlify.app/.netlify/git
-  site_url: https://magical-druid-edae07.netlify.app
+  site_url:   https://tripwithme-nine.vercel.app
+  display_url: https://tripwithme-nine.vercel.app
 
 # admin 경로
 local_backend: true
