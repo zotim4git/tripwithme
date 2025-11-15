@@ -1,13 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: zotim4git/tripwithme    # 깃허브 user/repo
   branch: main
-  identity_url: https://magical-druid-edae07.netlify.app/.netlify/identity
-  gateway_url: https://magical-druid-edae07.netlify.app/.netlify/git
-  site_url:   https://tripwithme-nine.vercel.app
-  display_url: https://tripwithme-nine.vercel.app
-
-# admin 경로
-# local_backend: true
+  base_url: https://tripwithme-nine.vercel.app
+  auth_endpoint: api/auth
 
 media_folder: "src/uploads"
 public_folder: "/uploads"
@@ -17,13 +13,34 @@ collections:
     label: "Seoul"
     folder: "src/seoul_spot"
     create: true
+
+    # 파일명 규칙 → slug 필드 값으로 파일 생성
     slug: "{{slug}}"
+
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "City", name: "city", widget: "hidden", default: "seoul" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Main Image", name: "main_image", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Title"
+        name: "title"
+        widget: "string"
 
+      - label: "Slug (URL)"
+        name: "slug"
+        widget: "string"
+        hint: "영어소문자-숫자-하이픈만 (예: the-hyundai-seoul-2025)"
 
+      - label: "City"
+        name: "city"
+        widget: "hidden"
+        default: "seoul"
 
+      - label: "Description"
+        name: "description"
+        widget: "text"
+
+      - label: "Main Image"
+        name: "main_image"
+        widget: "image"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        

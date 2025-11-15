@@ -1,36 +1,18 @@
 <!doctype html>
-<html>
+<html lang="ko">
   <head>
     <meta charset="utf-8" />
     <title>trip with me – Admin</title>
     <meta name="robots" content="noindex" />
-
-    <!-- Netlify Identity: Vercel에서 사용할 수 있게 APIUrl을 Netlify 쪽으로 강제 지정 -->
-    <script src="https://identity.netlify.com/v1/netlify-identity.js"></script>
-    <script>
-      const IDENTITY_API_URL = "https://magical-druid-edae07.netlify.app/.netlify/identity";
-
-      function initIdentity() {
-        if (window.netlifyIdentity) {
-          window.netlifyIdentity.init({
-            APIUrl: IDENTITY_API_URL,
-          });
-        }
-      }
-
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", initIdentity);
-      } else {
-        initIdentity();
-      }
-    </script>
   </head>
 
   <body>
-    <!-- CMS가 config.yml 위치를 확실히 알 수 있도록 지정 -->
-    <script>window.CMS_CONFIG_PATH = "/admin/config.yml";</script>
+    <!-- CMS config 위치 -->
+    <script>
+      window.CMS_CONFIG_PATH = "/admin/config.yml";
+    </script>
 
-    <!-- Decap / Netlify CMS 본체 -->
+    <!-- Decap CMS 본체 -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>

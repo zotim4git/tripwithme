@@ -19,5 +19,8 @@
   "homepage": "https://github.com/zotim4git/tripwithme#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2"
+  },
+  "dependencies": {
+    "netlify-cms-oauth-provider-node": "^2.0.0"
   }
 }
