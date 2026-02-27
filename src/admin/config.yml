@@ -15,7 +15,7 @@ collections:
     create: true
 
     # 파일명 규칙 → slug 필드 값으로 파일 생성
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
 
     fields:
       - label: "Title"
