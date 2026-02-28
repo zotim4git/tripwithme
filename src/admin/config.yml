@@ -15,6 +15,7 @@ collections:
     create: true
 
     # 파일명 규칙 → slug 필드 값으로 파일 생성
+    identifier_field: "slug"
     slug: "{{slug}}"
 
     fields:
@@ -26,7 +27,7 @@ collections:
         name: "slug"
         widget: "slug"
         from: "title"
-        hint: "영어소문자-숫자-하이픈만 (예: seoul-sungbuk)"
+        hint: "영어소문자-숫자-하이픈만 (예: seoul-sungbuk-cafe)"
 
       - label: "City"
         name: "city"
