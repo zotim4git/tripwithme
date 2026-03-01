@@ -13,10 +13,8 @@ collections:
     label: "Seoul"
     folder: "src/seoul_spot"
     create: true
-    
-    format: "frontmatter"
     extension: "md"
-    frontmatter_delimiter: "---"
+   
 
     # 파일명 규칙 → slug 필드 값으로 파일 생성
     identifier_field: "slug"
