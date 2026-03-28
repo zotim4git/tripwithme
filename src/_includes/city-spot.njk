@@ -5,16 +5,16 @@ layout: layout.njk
 <section id="main" class="spot-page">
   <div class="inner">
 
+    <h1 class="spot-title">{{ title }}</h1>
+
     {% if main_image %}
     <div class="spot-hero">
       <img src="{{ main_image | url }}" alt="{{ title }}">
     </div>
     {% endif %}
 
-    <h1 class="spot-title">{{ title }}</h1>
-
     <div class="spot-body">
-      {{ body | safe }}
+      {{ content | safe }}
     </div>
 
     <div class="button-container">
@@ -25,5 +25,3 @@ layout: layout.njk
 
   </div>
 </section>
-
-
