@@ -17,11 +17,13 @@ layout: layout.njk
       {{ content | safe }}
     </div>
 
-    <div class="button-container">
-      <a href="/generic_{{ city }}/" class="button">
-        Explore more spots in {{ city | capitalize }}
-      </a>
-    </div>
+    <div class="menu-line"></div>
+
+      <div class="city-footer">
+        <a href="/generic_{{ city }}/" class="btn-outline">
+          Explore more spots in {{ city | capitalize }}
+        </a>
+      </div>
 
   </div>
 </section>
