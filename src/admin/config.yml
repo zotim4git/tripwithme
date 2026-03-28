@@ -36,13 +36,10 @@ collections:
         widget: "hidden"
         default: "seoul"
 
-      - label: "Description"
-        name: "description"
-        widget: "text"
-
       - label: "Main Image"
         name: "main_image"
         widget: "image"
+        required: false
 
       - label: "Body"
         name: "body"
