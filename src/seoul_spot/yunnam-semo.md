@@ -43,7 +43,7 @@ how tastes in Seoul quietly accumulate and take shape.
   <img src="/uploads/yunnam3.webp" alt="연남동 세모길">
 </span>
 <span class="image fit">
-  <img src="/uploads/yunnam4.webp" alt="연남동 세모길">
+  <img src="/uploads/yunnam1.webp" alt="연남동 세모길">
 </span>
 
 ## 연남동 세모길
