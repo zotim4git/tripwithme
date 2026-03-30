@@ -36,15 +36,24 @@ Semo-gil, then, is not a place to visit with a clear purpose,
 but a place to observe—
 how tastes in Seoul quietly accumulate and take shape.
 
-<span class="image fit">
-  <img src="/uploads/yunnam2.webp" alt="연남동 세모길">
-</span>
+<div class="image-pair">
+  <span class="image fit">
+    <img src="/uploads/img_7591.webp">
+  </span>
+  <span class="image fit">
+    <img src="/uploads/img_7554.webp">
+  </span>
+</div>
 <span class="image fit">
   <img src="/uploads/yunnam3.webp" alt="연남동 세모길">
-</span>
-<span class="image fit">
-  <img src="/uploads/yunnam1.webp" alt="연남동 세모길">
-</span>
+<div class="image-pair">
+  <span class="image fit">
+    <img src="/uploads/img_7555.webp">
+  </span>
+  <span class="image fit">
+    <img src="/uploads/img_7557.webp">
+  </span>
+</div>
 
 ## 연남동 세모길
 
