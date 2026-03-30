@@ -3329,22 +3329,55 @@ input, select, textarea {
 
 		}
 
-.image-slider {
-  display: flex;
-  gap: 10px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 10px;
-}
+/* ===== IMAGE LAYOUT SYSTEM ===== */
 
-.image-slider img {
-  flex: 0 0 85%;
+/* 1. 기본 이미지 (본문 공통) */
+.spot-body img,
+#main .inner img {
+  width: 100%;
   height: auto;
-  scroll-snap-align: start;
+  display: block;
   border-radius: 8px;
 }
 
-.image-slider::-webkit-scrollbar {
-  display: none;
+
+/* 2. 이미지 2장 (세로 이미지용 - PC 2열 / 모바일 1열) */
+.image-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5em;
+  margin: 2em 0;
+}
+
+.image-pair .image.fit {
+  margin: 0;
+}
+
+@media screen and (max-width: 736px) {
+  .image-pair {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+}
+
+
+/* 3. 이미지 그룹 (2~여러장 자동 대응) */
+.image-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  margin: 2em 0;
+}
+
+.image-group .image.fit {
+  margin: 0;
+}
+
+
+/* 모바일 여백 조정 */
+@media screen and (max-width: 736px) {
+  .image-group {
+    gap: 1em;
+  }
 }
 
