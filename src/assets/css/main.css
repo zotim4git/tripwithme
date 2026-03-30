@@ -3332,13 +3332,6 @@ input, select, textarea {
 /* ===== IMAGE LAYOUT SYSTEM ===== */
 
 /* 1. 기본 이미지 (본문 공통) */
-.spot-body img,
-#main .inner img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-}
 
 
 /* 2. 이미지 2장 (세로 이미지용 - PC 2열 / 모바일 1열) */
