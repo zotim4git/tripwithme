@@ -54,12 +54,14 @@ but it represents a careful balance between tradition and contemporary branding.
   </span>
 </div>
 
-<span class="image main">
-  <img src="/uploads/tsuboyaki_4.webp">
-</span>
-<span class="image main">
-  <img src="/uploads/tsuboyaki_5.webp">
-</span>
+<div class="image-pair">
+  <span class="image fit">
+    <img src="/uploads/tsuboyaki_4.webp">
+  </span>
+  <span class="image fit">
+    <img src="/uploads/tsuboyaki_5.webp">
+  </span>
+</div>
 
 
 ## 츠보야키이모, 긴자
