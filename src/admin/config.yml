@@ -45,3 +45,41 @@ collections:
         name: "body"
         widget: "markdown"
         
+        
+  - name: "tokyo"
+    label: "Tokyo"
+    folder: "src/tokyo_spot"
+    create: true
+    extension: "md"
+
+    identifier_field: "slug"
+    slug: "{{slug}}"
+
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Slug (URL)"
+        name: "slug"
+        widget: "string"
+        hint: "영어소문자-숫자-하이픈만 (예: tokyo-cafe)"
+        pattern: ['^[a-z0-9-]+$', '영어 소문자/숫자/하이픈(-)만 가능']
+
+      - label: "City"
+        name: "city"
+        widget: "hidden"
+        default: "tokyo"
+
+      - label: "Description"
+        name: "description"
+        widget: "text"
+
+      - label: "Main Image"
+        name: "main_image"
+        widget: "image"
+        required: false
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
