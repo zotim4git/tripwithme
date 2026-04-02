@@ -19,12 +19,12 @@ module.exports = function(eleventyConfig) {
 
   // ✅ Seoul 글 컬렉션
   eleventyConfig.addCollection("seoulPosts", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/seoul_spot/*.md").reverse();
+    return collectionApi.getFilteredByGlob("src/seoul_spot/*.md");
   });
 
   // ✅ Tokyo 글 컬렉션
   eleventyConfig.addCollection("tokyoPosts", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/tokyo_spot/*.md").reverse();
+    return collectionApi.getFilteredByGlob("src/tokyo_spot/*.md");
   });
 
   return {
