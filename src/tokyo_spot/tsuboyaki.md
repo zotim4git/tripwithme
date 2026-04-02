@@ -45,12 +45,15 @@ and continues to draw long lines of customers in one of Tokyo’s most upscale d
 At first glance, it may seem like nothing more than a simple street snack,
 but it represents a careful balance between tradition and contemporary branding.
 
-<span class="image main">
-  <img src="/uploads/tsuboyaki_2.webp">
-</span>
-<span class="image main">
-  <img src="/uploads/tsuboyaki_3.webp">
-</span>
+<div class="image-pair">
+  <span class="image fit">
+    <img src="/uploads/tsuboyaki_2.webp">
+  </span>
+  <span class="image fit">
+    <img src="/uploads/tsuboyaki_3.webp">
+  </span>
+</div>
+
 <span class="image main">
   <img src="/uploads/tsuboyaki_4.webp">
 </span>
