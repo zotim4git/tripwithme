@@ -2,7 +2,8 @@
 title: Tsuboyaki Imo, Ginza
 slug: tsuboyaki
 city: tokyo
-description: tsuboyaki
+description: A slow-roasted sweet potato shop in Ginza, where traditional
+  methods meet refined branding.
 main_image: /uploads/tsuboyaki_1.webp
 ---
 In the early Showa period—around the 1930s and 40s—
