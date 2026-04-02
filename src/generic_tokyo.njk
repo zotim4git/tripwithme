@@ -23,9 +23,9 @@
 							  <button class="category-toggle">Select Area <i class="fas fa-bars"></i></button>
 							  <nav class="category-nav">
 								<a href="#" class="filter-btn active" data-filter="all">All</a>
-								<a href="#" class="filter-btn" data-filter="central">zone red</a>
-								<a href="#" class="filter-btn" data-filter="left">zone blue </a>
-								<a href="#" class="filter-btn" data-filter="north">others</a>
+								<a href="#" class="filter-btn" data-filter="group-1">zone red</a>
+								<a href="#" class="filter-btn" data-filter="group-2">zone blue </a>
+								<a href="#" class="filter-btn" data-filter="group-3">Elsewhere</a>
 							  </nav>
 							</div>
 
@@ -34,8 +34,13 @@
 							 <ul>
 							  {% for post in collections.tokyoPosts %}
 
-								<li class="mix">
+								<li class="mix group-{{ post.data.location_group | default('4') }}">
+
 								  <div class="cd-title">{{ post.data.title }}</div>
+
+								  {% if post.data.location_text %}
+									<div class="cd-location">{{ post.data.location_text }}</div>
+								  {% endif %}
 
 								  {% if post.data.main_image %}
 									<img src="{{ post.data.main_image | url }}" alt="{{ post.data.title }}">
@@ -48,10 +53,11 @@
 								  <div class="button-container">
 									<a href="{{ post.url }}" class="btn-fullstory">Full Story</a>
 								  </div>
+
 								</li>
 
 							  {% endfor %}
-							 </ul>>
+							 </ul>
 								
 							</section>
 							<div class="menu-line"></div>
