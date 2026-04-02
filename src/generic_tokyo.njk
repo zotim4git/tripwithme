@@ -31,19 +31,27 @@
 
 							<!-- CARD SECTION -->
 							<section class="cd-gallery">
-							  <ul>
-								<li class="mix seine">
-									<div class="cd-title">Rue de la Huchette</div>
-                                    <div class="cd-location">France 75005 Paris</div>
-									<img src="/image_city/pari_huchette_3.webp" alt="Amorepacific Headquarters">
-								  <p class="desc">A buzzing alleyway in the Latin Quarter where medieval Paris peeks through — cobblestones, crepes, and café chatter.</p>
+							 <ul>
+							  {% for post in collections.tokyoPosts %}
+
+								<li class="mix">
+								  <div class="cd-title">{{ post.data.title }}</div>
+
+								  {% if post.data.main_image %}
+									<img src="{{ post.data.main_image | url }}" alt="{{ post.data.title }}">
+								  {% endif %}
+
+								  {% if post.data.description %}
+									<p class="desc">{{ post.data.description }}</p>
+								  {% endif %}
+
 								  <div class="button-container">
-									<a href="/generic_rue_de_la_huchette" class="btn-fullstory">Full Story</a>
+									<a href="{{ post.url }}" class="btn-fullstory">Full Story</a>
 								  </div>
 								</li>
 
-								
-							  </ul>
+							  {% endfor %}
+							 </ul>>
 								
 							</section>
 							<div class="menu-line"></div>

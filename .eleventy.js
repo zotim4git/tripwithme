@@ -17,6 +17,16 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.setLibrary("md", md);
 
+  // ✅ Seoul 글 컬렉션
+  eleventyConfig.addCollection("seoulPosts", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/seoul_spot/*.md").reverse();
+  });
+
+  // ✅ Tokyo 글 컬렉션
+  eleventyConfig.addCollection("tokyoPosts", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/tokyo_spot/*.md").reverse();
+  });
+
   return {
     dir: {
       input: "src",
