@@ -2,6 +2,10 @@
 title: Yeonnam-dong Semo-gil
 slug: yunnam-semo
 city: seoul
+description: A Daikanyama-like alley where walking without a destination becomes
+  the main attraction.
+location_group: "1"
+location_text: Yeonnam-dong , Mapo-gu
 main_image: /uploads/yunnam5.webp
 ---
 While many alleys in Yeonnam-dong share a similar character,
