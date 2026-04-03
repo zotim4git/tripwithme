@@ -79,6 +79,7 @@ you begin to understand what Simmons represents.
     <img src="/uploads/simmons10.webp">
   </span>
 </div>
+## 시몬스 테라스, 이천
 
 이천 시몬스 침대 공장에 있는 시몬스 테라스는 처음 보면 다소 낯설다.
 침대 브랜드의 공간이라고 하기엔
