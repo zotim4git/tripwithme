@@ -36,6 +36,26 @@ collections:
         widget: "hidden"
         default: "seoul"
 
+
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        
+      - label: "Location Group"
+        name: "location_group"
+        widget: "select"
+        options:
+          - { label: "1", value: "1" }
+          - { label: "2", value: "2" }
+          - { label: "3", value: "3" }
+          - { label: "4", value: "4" }
+
+      - label: "Location Text"
+        name: "location_text"
+        widget: "string"
+        required: false
+
+
       - label: "Main Image"
         name: "main_image"
         widget: "image"

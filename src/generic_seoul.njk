@@ -22,10 +22,10 @@
 							  <button class="category-toggle">Select Area <i class="fas fa-bars"></i></button>
 							  <nav class="category-nav">
 								<a href="#" class="filter-btn active" data-filter="all">All</a>
-								<a href="#" class="filter-btn" data-filter="central">Central Seoul</a>
-								<a href="#" class="filter-btn" data-filter="seongsu">Seongsu Area</a>
-								<a href="#" class="filter-btn" data-filter="gangnam">Gangnam Area</a>
-								<a href="#" class="filter-btn" data-filter="elsewhere">Elsewhere</a>
+								<a href="#" class="filter-btn" data-filter="group-1">Central Seoul</a>
+								<a href="#" class="filter-btn" data-filter="group-2">Seongsu Area</a>
+								<a href="#" class="filter-btn" data-filter="group-3">Gangnam Area</a>
+								<a href="#" class="filter-btn" data-filter="group-4">Elsewhere</a>
 							  </nav>
 							</div>
 
@@ -33,17 +33,29 @@
 							<section class="cd-gallery">
 							  <ul>
 							  
-							    <li class="mix central">
-									<div class="cd-title">Yeonnam-dong Semo-gil</div>
-                                    <div class="cd-location">Yeonnam-dong, Mapo-gu</div>
-									<img src="/uploads/yunnam5.webp" alt="연남동세모길">
-								  <p class="desc">A Daikanyama-like alley where walking without a destination becomes the main attraction.</p>
+							  {% for post in collections.seoulPosts %}
+								<li class="mix group-{{ post.data.location_group | default('4') }}">
+								  <div class="cd-title">{{ post.data.title }}</div>
+
+								  {% if post.data.location_text %}
+									<div class="cd-location">{{ post.data.location_text }}</div>
+								  {% endif %}
+
+								  {% if post.data.main_image %}
+									<img src="{{ post.data.main_image | url }}" alt="{{ post.data.title }}">
+								  {% endif %}
+
+								  {% if post.data.description %}
+									<p class="desc">{{ post.data.description }}</p>
+								  {% endif %}
+
 								  <div class="button-container">
-									<a href="/seoul/yunnam-semo" class="btn-fullstory">Full Story</a>
+									<a href="{{ post.url }}" class="btn-fullstory">Full Story</a>
 								  </div>
 								</li>
+							  {% endfor %}
 								
-								<li class="mix central">
+								<li class="mix group-1">
 									<div class="cd-title">Amorepacific Headquarters</div>
                                     <div class="cd-location">100, Hangang-daero, Yongsan-gu</div>
 									<img src="/image_city/lobby.webp" alt="Amorepacific Headquarters">
@@ -53,7 +65,7 @@
 								  </div>
 								</li>
 
-								<li class="mix gangnam">
+								<li class="mix group-3">
 									<div class="cd-title">Simmons Grocery Store Sinsa</div>
                                     <div class="cd-location">40-1, Gangnam-daero 162-gil, Gangnam-gu</div>
 									<img src="/image_city/simins_fasade.webp" alt="Simmons Grocery Store">
@@ -63,7 +75,7 @@
 								  </div>
 								</li>
 
-								<li class="mix seongsu">
+								<li class="mix group-2">
 									<div class="cd-title">BOMARKET, Seoul Forest</div>
                                     <div class="cd-location">B1, 83-21, Wangsimni-ro, Seongdong-gu</div>
 								  <img src="/image_city/bomark_1.webp" alt="bomarket">
